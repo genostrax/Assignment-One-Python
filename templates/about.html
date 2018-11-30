@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+{% block content %}
+  <div class="about">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+    <!-- Content -->
+    <div class="container content">
+
+            <h1 class="my-4">About Us</h1>
+        
+            <div class="row">
+        
+                <div class="col-md-8">
+                <img class="img-fluid" src="https://i.imgur.com/EGzK0pH.jpg" alt="forklift">
+                </div>
+        
+                <div class="col-md-4">
+                <h3 class="my-3">Project Description</h3>
+                <p>At HCLI, we have invested in world-class technology to manage your supply chain. Our in-house system integrates transportation, inventory management, order fulfillment, financial settlement and e-commerce applications to give you the visibility and control you need.</p>
+                <h3 class="my-3">Contacts</h3>
+                <address>
+                        <a href="mailto:perfect47wave@gmail.com">Aaraamasree Sreekumar</a><br> 
+                        H & C Logistics Inc&#8482;<br>
+                        Infopark, Kakkanad<br>
+                        Kochi - 682037<br>
+                        Ph. 9946212435
+                </address>
+                </div>
+        
+            </div>
+        
+            <h3 class="my-4">Related Projects</h3>
+        
+            <div class="row">
+        
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <img class="img-fluid" src="https://i.imgur.com/3nCtidI.jpg" alt="workers">
+                </div>
+        
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <img class="img-fluid" src="https://i.imgur.com/7dWSzhO.jpg" alt="woman working">
+                </div>
+        
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <img class="img-fluid" src="https://i.imgur.com/7hiV251.jpg" alt="technician working">
+                </div>
+        
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <img class="img-fluid" src="https://i.imgur.com/x9ipFfy.jpg" alt="man lifting">
+                </div>
+        
+            </div>
+        
+    </div>
+  </div>
+{% endblock %}

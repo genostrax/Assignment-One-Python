@@ -1,0 +1,13 @@
+body {
+  background: url('https://i.imgur.com/qe5DhlP.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  color: #fff;
+}
+
+section{
+  margin-top: 14rem;
+  background-color: rgba(0, 0, 0, 0.6);
+}

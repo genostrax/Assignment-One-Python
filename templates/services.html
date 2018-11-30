@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+{% block content %}
+  <div class="services">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/services.css') }}">
+    <!-- Content -->
+    <div class="container content">
+
+            <header class="jumbotron my-4">
+              <h1 class="display-3"><strong>SERVICES</strong></h1>
+              <p class="lead">We are committed to offering you reliable import-export of goods in an expeditious manner.</p>
+              <a href="#rForm" class="btn btn-primary btn-lg">Contact Us</a>
+            </header>
+      
+            <div class="row text-center">
+      
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                  <img class="card-img-top" src="https://i.imgur.com/w5NTtas.jpg" alt="">
+                  <div class="card-body">
+                    <h4 class="card-title">Freight Management
+                    </h4>
+                    <p class="card-text">we are committed to offering you reliable import-export of goods in an expeditious manner. We have a solid track record of fulfilling the shipping and logistical needs</p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                  <img class="card-img-top" src="https://i.imgur.com/Dbu8jHn.jpg" alt="">
+                  <div class="card-body">
+                    <h4 class="card-title">
+                            Custom Brokerage</h4>
+                    <p class="card-text">Our customs clearance agents are experts in local specifications, conditions and regulations. This on-the-ground knowledge allows them to handle complete administration tasks for you</p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                  <img class="card-img-top" src="https://i.imgur.com/ieCDUqg.jpg" alt="">
+                  <div class="card-body">
+                    <h4 class="card-title">Warehousing & Distribution</h4>
+                    <p class="card-text">Atlas expertise can carry the warehouse from the initial planning stages through the implementation process, using proven warehousing and distribution solutions</p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                  <img class="card-img-top" src="https://i.imgur.com/hF0sSJv.jpg" alt="">
+                  <div class="card-body">
+                    <h4 class="card-title">
+                            Project Logistics</h4>
+                    <p class="card-text">Project specialists in Atlas Logistics offer solutions for professional handling of oversized and heavy cargo. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6" id="rForm">
+                <form action="{{ url_for('index') }}" name="registerForm" onsubmit="return validateForm()">
+                    <fieldset>
+                    <legend>Register for enquiry: </legend>
+                    <div class="form-group">
+                            <label for="name">Name*:</label>
+                            <input type="name" class="form-control" id="name" placeholder="Enter Name" name="name" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email*:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                            <label for="tel">Phone*:</label>
+                            <input type="tel" class="form-control" id="tel" placeholder="Enter Phone Number" name="tel" autocomplete="off">
+                    </div>
+                    <div class="form-group form-check">
+                        <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="remember" checked> I agree to receive newletters & promotional email
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Register</button>
+                    </fieldset>
+                </form>
+            </div>
+    </div>
+    <script src="url_for('static', filename='js/services.js') }}"></script>
+  </div>
+{% endblock %}
